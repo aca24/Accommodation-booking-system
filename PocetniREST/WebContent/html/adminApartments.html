@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="../lib/jquery-3.3.1.min.js"></script>
+<script src="../lib/bootstrap.min.js" type="text/javascript"></script>
+<script src="../lib/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<link href="../lib/bootstrap.min.css" rel="stylesheet"></link>
+<link href="../lib/bootstrap-datepicker3.min.css" rel="stylesheet"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+<script src="../js/adminApartments.js"></script>
+<script src="../js/header.js"></script>
+
+<title>Apartments</title>
+</head>
+<body>
+    <header class="navbar navbar-expand navbar-dark bg-info" id="header">
+        
+    </header>
+
+    <div class="container-fluid" id="main">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-xs-12 pl-0">
+                <div class="card">
+                    <!-- Location -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">City</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <input id="city" type="text" class="form-control" placeholder="Enter city name here">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Rating -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Rating</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <span class="fa fa-star" id="star1"></span>
+                                <span class="fa fa-star" id="star2"></span>
+                                <span class="fa fa-star" id="star3"></span>
+                                <span class="fa fa-star" id="star4"></span>
+                                <span class="fa fa-star" id="star5"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Apartment type-->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Apartment type</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                    <label class="form-check-inline">
+                                        <input class="form-check-input" type="radio" name="apartmentType" id="room">
+                                        <span class="form-check-label">Room</span>
+                                    </label>
+                                    <label class="form-check-inline">
+                                        <input class="form-check-input" type="radio" name="apartmentType" id="apartment">
+                                        <span class="form-check-label">Apartment</span>
+                                    </label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Number of rooms -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Number of rooms</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="custom-control-inline custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="roomCheck1">
+                                      <label class="custom-control-label" for="roomCheck1">1</label>
+                                </div>
+                                <div class="custom-control-inline custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="roomCheck2">
+                                      <label class="custom-control-label" for="roomCheck2">2</label>
+                                </div>
+                                <div class="custom-control-inline custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="roomCheck3">
+                                      <label class="custom-control-label" for="roomCheck3">3</label>
+                                </div> 
+                                <div class="custom-control-inline custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="roomCheck4">
+                                      <label class="custom-control-label" for="roomCheck4">4</label>
+                                </div>
+                                <div class="custom-control-inline custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="roomCheck5">
+                                     <label class="custom-control-label" for="roomCheck5">5+</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Number of guests -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Number of guests</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="custom-control-inline custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="guestCheck1">
+                                    <label class="custom-control-label" for="guestCheck1">1</label>
+                              </div>
+                              <div class="custom-control-inline custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="guestCheck2">
+                                    <label class="custom-control-label" for="guestCheck2">2</label>
+                              </div>
+                              <div class="custom-control-inline custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="guestCheck3">
+                                    <label class="custom-control-label" for="guestCheck3">3</label>
+                              </div> 
+                              <div class="custom-control-inline custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="guestCheck4">
+                                    <label class="custom-control-label" for="guestCheck4">4</label>
+                              </div>
+                              <div class="custom-control-inline custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="guestCheck5">
+                                   <label class="custom-control-label" for="guestCheck5">5+</label>
+                              </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Price -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Price range</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Min</label>
+                                        <input type="number" class="form-control" id="minPrice" placeholder="$0">
+                                    </div>
+                                    <div class="form-group col-md-6 text-right">
+                                        <label>Max</label>
+                                        <input type="number" class="form-control" id="maxPrice" placeholder="$1,0000">
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Amenities -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Amenities</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6" id="amenities1">
+                                        
+                                    </div>
+                                    <div class="form-group col-md-6" id="amenities2">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Datepicker -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Date</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="form-row">
+                                        <div class="input-daterange input-group" id="datepicker">
+                                            <div class="form-group col-md-6">
+                                                <span class="input-group-addon">From</span>
+                                                <input type="text" class="form-control" id="startDate">
+                                            </div>
+                                            <div class="form-group col-md-6 text-right">
+                                                <span class="input-group-addon">To</span>
+                                                <input type="text" class="form-control" id="endDate">    
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <button type="button" class="btn btn-outline-secondary" id="filter">Search</button>
+                    <button type="button" class="btn btn-outline-secondary" id="reset">Reset</button>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-8 col-md-7 col-sm-6 col-xs-12">
+                <div class="container text-center">
+                    <div class="row ml-4 mb-2 mt-2 p-2">
+                        <button type="button" class="btn btn-outline-secondary fa fa-sort-up" id="sortUp"></button>
+                        <button type="button" class="btn btn-outline-secondary 	fa fa-sort-down" id="sortDown"></button>
+                    </div>
+                    <div class="row" id="apartmentsList">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

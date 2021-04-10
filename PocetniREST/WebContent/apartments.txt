@@ -1,0 +1,6 @@
+1;Green garden;APARTMENT;2;3;1;pera;50.0;13;11;ACTIVE;1,2,3;false
+2;Cool blue;ROOM;1;2;2;pera;80.0;13;9;INACTIVE;1,8,2,6,3;false
+3;Oasis;APARTMENT;4;6;3;pera;150.0;12;10;INACTIVE;1,8,2,6,3,7;false
+4;Flower house;APARTMENT;4;8;4;pera;200.0;15;12;INACTIVE;1,8,2,7;false
+5;Beach house;ROOM;1;1;5;mika;30.0;12;10;ACTIVE;2,3;false
+6;DeLux;APARTMENT;2;4;6;mika;500.0;14;11;ACTIVE;1,8,2,6,3,7;false

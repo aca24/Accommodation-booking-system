@@ -1,0 +1,8 @@
+1;Parking;false
+2;Air conditioning;false
+3;Cable TV;false
+4;Kitchen;false
+5;Refrigerator;true
+6;Microwave;false
+7;Pool;false
+8;Balcony;false

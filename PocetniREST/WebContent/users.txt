@@ -1,0 +1,7 @@
+aca;111;Aleksandar;Savic;male;ADMIN;false
+pera;111;Pera;Peric;male;HOST;false
+mika;111;Mika;Mikic;male;HOST;false
+ivan;111;Ivan;Ivanovic;male;HOST;false
+gost1;111;ImeGosta1;PrezimeGosta1;female;GUEST;false
+gost2;111;ImeGosta2;PrezimeGosta2;male;GUEST;false
+gost3;111;ImeGosta3;PrezimeGosta3;female;GUEST;false

@@ -1,0 +1,13 @@
+1;1;gost1;08-07-2020;1;50.0;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et;ACCEPTED
+2;5;gost1;06-08-2020;3;84.0;Lorem ipsum dolor sit amet.;CREATED
+3;6;gost1;24-07-2020;3;1350.0;;CREATED
+4;6;gost2;27-07-2020;1;500.0;Lorem ipsum dolor.;CREATED
+5;1;gost2;23-09-2020;7;335.0;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.;CREATED
+6;1;gost2;23-03-2020;7;335.0;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.;FINISHED
+7;1;gost2;20-03-2020;7;335.0;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.;CANCELED
+8;6;gost2;27-07-2019;1;500.0;Lorem ipsum dolor.;REJECTED
+9;5;gost1;06-04-2020;3;84.0;Lorem ipsum dolor sit amet.;FINISHED
+10;1;gost3;09-01-2020;1;50.0;Lorem ipsum.;FINISHED
+11;5;gost3;27-03-2020;1;30.0;Lorem ipsum dolor sit.;FINISHED
+12;6;gost3;15-05-2020;1;500.0;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.;FINISHED
+13;6;gost3;30-07-2020;1;525.0;;CREATED

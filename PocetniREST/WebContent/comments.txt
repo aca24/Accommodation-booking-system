@@ -1,0 +1,5 @@
+1;gost1;5;Apartmant je veoma konforan za odmaranje.;5;true
+2;gost2;6;Apartmant je veoma prijatan za odmaranje.;4;true
+3;gost3;1;Apartmant ima dobro osoblje.;3;true
+4;gost3;5;;4;true
+5;gost3;6;Apartmant nudi sve moguce rekvizite.;3;true

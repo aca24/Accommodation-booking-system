@@ -1,0 +1,6 @@
+1;Partizanska;49;Beograd;11050
+2;Kosovska;10;Kragujevac;34000
+3;Hadzi Ruvimova;48;Novi Sad;21000
+4;Dinka Simunovica;88;Petrovaradin;21131
+5;Pariske Komune;22;Novi Sad;21000
+6;Cankareva;27;Novi Sad;21000

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script src="../lib/jquery-3.3.1.min.js"></script>
+<script src="../lib/bootstrap.min.js" type="text/javascript"></script>
+<script src="../lib/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<script src="../lib/bootstrap-clockpicker.min.js" type="text/javascript"></script>
+<link href="../lib/bootstrap.min.css" rel="stylesheet"></link>
+<link href="../lib/bootstrap-datepicker3.min.css" rel="stylesheet"></link>
+<link href="../lib/bootstrap-clockpicker.min.css" rel="stylesheet"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="../css/newApartment.css" rel="stylesheet"></link>
+<script src="../js/newApartment.js"></script>
+<script src="../js/header.js"></script>
+
+<title>New apartment</title>
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand navbar-dark bg-info" id="header">
+
+    </header>
+
+    <div class="container col-lg-6 col-md-8 col-xs-12">
+        <div class="stepwizard">
+            <div class="stepwizard-row setup-panel">
+                <div class="stepwizard-step">
+                    <a href="#step-1" type="button" class="btn btn-info btn-circle">1</a>
+                    <p>Step 1</p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-2" type="button" class="btn btn-default btn-circle">2</a>
+                    <p>Step 2</p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-3" type="button" class="btn btn-default btn-circle">3</a>
+                    <p>Step 3</p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-4" type="button" class="btn btn-default btn-circle">4</a>
+                    <p>Step 4</p>
+                </div>
+            </div>
+        </div>
+        <form role="form" enctype="multipart/form-data">
+            <div class="row setup-content" id="step-1">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h3> Step 1: Basic info</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Name</label>
+                                <input  maxlength="100" type="text" class="form-control" id="name" name="name" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Type</label>
+                                <br>
+                                <label class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="type" id="room" value="ROOM">
+                                    <span class="form-check-label" for="room">Room</span>
+                                </label>
+                                <label class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="type" id="apartment" value="APARTMENT">
+                                    <span class="form-check-label" for="apartment">Apartment</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">City</label>
+                                <input maxlength="100" type="text" class="form-control" id="city" name="city"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Street</label>
+                                <input maxlength="100" type="text" class="form-control" id="street" name="street"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Number</label>
+                                <input maxlength="100" type="number" class="form-control" id="number" name="number"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Postal code</label>
+                                <input maxlength="100" type="text" class="form-control" id="postalCode" name="postalCode"/>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row justify-content-between">
+                        <div class="col-auto mr-auto">
+                            <p class="text-danger" id="msg1"></p>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-secondary nextBtn btn-lg pull-right float-right" type="button" id="btnNext1" >Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row setup-content" id="step-2">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h3> Step 2: Details</h3>
+                        </div>
+                    </div>
+                    <div class="row padding">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Price</label>
+                                <input  maxlength="100" type="number" class="form-control" min="1" id="price" name="price"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Number of rooms</label>
+                                <input maxlength="100" type="number" class="form-control" min="1" id="rooms" name="rooms"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Number of guests</label>
+                                <input maxlength="100" type="number" class="form-control" min="1" id="guests" name="guests"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Check in time</label>
+                                <div class="input-group clockpicker" id="clockpicker1">
+                                    <input type="text" class="form-control" value="14:00" name="checkIn" id="checkIn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Check out time</label>
+                                <div class="input-group clockpicker" id="clockpicker2">
+                                    <input type="text" class="form-control" value="10:00" name="checkOut" id="checkOut">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Amenities -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Amenities</label>
+                                <div class="row">
+                                    <div class="col-md-4" id="col1">
+                                  
+                                    </div>
+                                    <div class="col-md-4" id="col2">
+               
+                                    </div>
+                                    <div class="col-md-4" id="col3">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row justify-content-between">
+                        <div class="col-auto mr-auto">
+                            <p class="text-danger" id="msg2"></p>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-secondary nextBtn btn-lg pull-right float-right" type="button" id="btnNext2">Next</button>
+                            <button class="mr-2 btn btn-outline-secondary nextBtn btn-lg pull-right float-right previousBtn" type="button">Previous</button>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="row setup-content" id="step-3">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h3> Step 3: Dates for rent</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <label class="control-label">Choose separate dates</label>
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-7" id="datepicker1"></div>
+                                    <input type="hidden"/> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <label class="control-label">Choose range</label>
+                                <div class="row">
+                                    <div class="input-daterange input-group" id="datepicker2">
+                                        <div class="form-group col-md-6">
+                                            <span class="input-group-addon">From</span>
+                                            <input type="text" class="form-control" id="startDate">
+                                        </div>
+                                        <div class="form-group col-md-6 text-right">
+                                            <span class="input-group-addon">To</span>
+                                            <input type="text" class="form-control" id="endDate">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row justify-content-between">
+                        <div class="col-auto mr-auto">
+                            <p id="msg3"></p>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-info btn-lg pull-right float-right" id="create" type="submit">Create</button>
+                            <button class="mr-2 btn btn-outline-secondary nextBtn btn-lg pull-right float-right previousBtn" type="button">Previous</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row setup-content" id="step-4">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h3> Step 4: Images</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-5 form-group">
+                                <label class="control-label">First image</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputFile1" aria-describedby="inputGroupFileAddon1" accept=".jpg,.jpeg,.png" name="1">
+                                    <label class="custom-file-label" for="inputFile1">Choose file</label>
+                                    <div class="row pl-3">
+
+                                    </div>
+                                    <img hidden id="thumbnail1" src="" alt="" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
+                                    <button hidden title="Remove" class="fa fa-remove btn" type="button" id="remove1"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-5 form-group">
+                                <label class="control-label">Second image</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputFile2" aria-describedby="inputGroupFileAddon2" accept=".jpg,.jpeg,.png" name="2">
+                                    <label class="custom-file-label" for="inputFile2">Choose file</label>
+                                    <div class="row pl-3">
+                                        <img hidden id="thumbnail2" src="" alt="" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
+                                        <button hidden title="Remove" class="fa fa-remove btn" type="button" id="remove2"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-5 form-group">
+                                <label class="control-label">Third image</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputFile3" aria-describedby="inputGroupFileAddon3" accept=".jpg,.jpeg,.png" name="3">
+                                    <label class="custom-file-label" for="inputFile3">Choose file</label>
+                                    <div class="row pl-3">
+                                        <img hidden id="thumbnail3" src="" alt="" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
+                                        <button hidden title="Remove" class="fa fa-remove btn" type="button" id="remove3"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-5 form-group">
+                                <label class="control-label">Fourth image</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputFile4" aria-describedby="inputGroupFileAddon4" accept=".jpg,.jpeg,.png" name="4">
+                                    <label class="custom-file-label" for="inputFile4">Choose file</label>
+                                    <div class="row pl-3">
+                                        <img hidden id="thumbnail4" src="" alt="" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
+                                        <button hidden title="Remove" class="fa fa-remove btn" type="button" id="remove4"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-5 form-group">
+                                <label class="control-label">Fifth image</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputFile5" aria-describedby="inputGroupFileAddon5" accept=".jpg,.jpeg,.png" name="5">
+                                    <label class="custom-file-label" for="inputFile5">Choose file</label>
+                                    <div class="row pl-3">
+                                        <img hidden id="thumbnail5" src="" alt="" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
+                                        <button hidden title="Remove" class="fa fa-remove btn" type="button" id="remove5"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row justify-content-between">
+                        <div class="col-auto mr-auto">
+                            <p id="msg4"></p>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-info btn-lg pull-right float-right" type="button" id="finish">Finish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.checked {
+  color: orange;
+}
+
+.column {
+    float: left;
+    padding: 1px;
+  }
+  
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+
+  .img-thumbnail {
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+  }
+
+  #leftPanel p, #rightPanel p {
+    display: inline-block;
+  }
+
+  .btn {
+      background-color: transparent;
+  }
+
+  .btn:focus {
+      box-shadow: none !important;
+  }

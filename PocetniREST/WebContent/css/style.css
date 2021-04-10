@@ -1,0 +1,20 @@
+.checked {
+    color: orange;
+}
+
+#leftPanel p, #rightPanel p {
+    display: inline-block;
+}
+
+#roomsGuests p {
+    margin-bottom: 5px;
+}
+
+#img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
